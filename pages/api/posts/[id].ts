@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { connectToDatabase } from '../../../utils/mongodb';
 import { ObjectId } from 'mongodb';
 
-export default async (req: NextApiRequest, res: NextApiResponse<any>) => {
+export default async (req: NextApiRequest, res: NextApiResponse) => {
     const {
         method,
         query: { id },

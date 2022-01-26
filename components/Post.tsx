@@ -25,7 +25,7 @@ interface PostType {
 
 interface PostProps {
     post: PostType;
-    modalPost: any;
+    modalPost?: boolean;
 }
 
 const Post = ({ post, modalPost }: PostProps) => {
